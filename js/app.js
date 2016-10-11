@@ -4,10 +4,9 @@ let express = require('express');
 let app = express();
 
 app.get("/", (req, resp) => {
-
-  resp.send('Hello world');
+  resp.send('hello world');
 });
 
-app.listen(8080, () => {
-  console.log('Server running on localhost:8080');
+app.listen(4000, () => {
+  console.log('Server running on localhost:4000');
 });

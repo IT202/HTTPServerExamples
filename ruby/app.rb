@@ -1,5 +1,5 @@
 require "sinatra"
 
 get "/" do
-  'Hello from index'
+  'hello world'
 end
