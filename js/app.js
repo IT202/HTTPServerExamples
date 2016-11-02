@@ -4,7 +4,13 @@ let express = require('express');
 let app = express();
 
 app.get("/", (req, resp) => {
-  resp.send('hello world');
+  resp.json({
+    "this": "is",
+    "a": "json",
+    "response": [
+      {"example": "!"}
+    ]
+  });
 });
 
 app.listen(4000, () => {
